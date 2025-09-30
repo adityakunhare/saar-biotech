@@ -1,0 +1,8 @@
+<div class="p-8 bg-red-400 text-white flex items-center justify-between ">
+	<div> <h1 class="text-3xl font-bold">{{ .Title }}</h1> </div>
+	<div>
+		{{ range .Site.Menus.main }}
+			<a class="ml-4  " href="{{ .URL }}">{{ .Name }}</a>
+		{{ end }}
+	</div>
+</div>

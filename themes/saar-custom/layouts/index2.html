@@ -1,0 +1,16 @@
+
+{{ define "main" }}
+
+<div class="px-20 mt-10">
+	{{ range where .Site.RegularPages "Type" "posts" }}
+	<article class="mb-10">
+		<h2 class="text-2xl font-bold mb-2"><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+		<p class="text-sm text-gray-600 mb-4">{{ .Date.Format "January 2, 2006" }}</p>
+		<div class="prose">
+			{{ .Summary }}
+		</div>
+	</article>
+	{{ end }}
+</div>
+
+{{ end }}
