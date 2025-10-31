@@ -1,0 +1,380 @@
+{{ define "main" }}
+  
+<section class=" bg-[url('/images/products_hero_image.webp')] sm:bg-[url('/images/products_hero_image.webp')] bg-cover bg-size-[auto_50px] h-[600px] sm:h-screen invert-20  bg-center bg-no-repeat ">
+    <div class="backdrop-opacity-10 bg-slate-900/70 h-[600px] sm:h-screen px-6 sm:px-10 py-6 bg-gradient-to-r from-gray-800/50 via-gray-800/50 to-gray-700/50  ">
+      <!-- Header -->
+      <header class="flex items-center justify-between mb-32">
+        <!-- SAAR Logo -->
+        <div class="flex items-center">
+          <div class="relative">
+            <img src="/images/saarlogo.png" class="h-[40px] w-[72px] sm:w-[107px] sm:h-[55px] ">
+          </div>
+        </div>
+
+        <!-- Navigation -->
+        <div class="flex items-center sm:justify-between gap-4 sm:w-full">
+          <nav class="hidden sm:flex sm:justify-center sm:gap-6 sm:w-full sm:text-lg sm:text-gray-200">
+            <a href="#" class="hover:text-saar-teal">Home</a>
+            <a href="#" class="hover:text-saar-teal">About Us</a>
+            <a href="#" class="hover:text-saar-teal">Manufacturing Unit</a>
+            <a href="#" class="hover:text-saar-teal">Products</a>
+            <a href="#" class="hover:text-saar-teal">Events</a>
+            <a href="#" class="hover:text-saar-teal">Careers</a>
+            <a href="#" class="hover:text-saar-teal">Articles</a>
+            <a href="#" class="hover:text-saar-teal">Contact Us</a>
+          </nav>
+
+          <!-- Menu button -->
+          <button class="sm:hidden w-10 h-10 flex items-center justify-center">
+            <div class="space-y-1.5">
+              <div class="w-6 h-0.5 bg-white rounded"></div>
+              <div class="w-6 h-0.5 bg-white rounded"></div>
+              <div class="w-6 h-0.5 bg-white rounded"></div>
+            </div>
+          </button>
+          
+          <!-- Get a Quote button -->
+          <button
+            class="bg-saar-teal sm:flex sm:justify-center sm:w-[200px] sm:text-lg text-white px-4 sm:px-1 py-2 sm:py-3 rounded-xl sm:rounded-lg font-medium flex items-center gap-2 shadow-lg">
+            Get a Quote
+            <svg width="16" height="16" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M8.2418 2.93117C7.41434 3.75866 5.87489 3.72759 5.01257 2.86527L4.65902 2.51172L3.9802 3.19054L4.33375 3.54409C4.96096 4.17129 5.81333 4.49555 6.65978 4.51317L2.4718 8.70116L3.17891 9.40826L7.36688 5.22028C7.38452 6.06674 7.70876 6.9191 8.336 7.54634L8.68952 7.89986L9.36836 7.22102L9.01478 6.8675C8.15246 6.00518 8.12144 4.46577 8.9489 3.63828L9.28832 3.29887L8.58122 2.59176L8.2418 2.93117Z"
+                fill="white" />
+            </svg>
+          </button>
+        </div>
+      </header>
+
+      <!-- Hero Content -->
+      <main class="flex flex-col sm:relative space-y-8">
+        <!-- Trust Badge -->
+        <div
+          class="inline-flex w-fit items-center shadow-xl bg-gradient-to-r from-slate-500/50 via-slate-800/50 to-slate-900/50 backdrop-blur-xl rounded-full px-2 py-1 border-l-2 border-r-2 border-b border-t border-slate-200/35">
+          <span class="text-xs sm:text-lg text-white-100">
+            Home / <b>Products</b>
+          </span>
+        </div>
+
+        <!-- Main Heading -->
+        <div class="space-y-4">
+          <h1 class="text-2xl sm:text-6xl font-bold leading-tight sm:leading-[1.2] text-white">
+            Comprehensive Range <br class="hidden sm:block"> of Pharmaceutical Products
+          </h1>
+
+          <p class="text-sm sm:text-lg text-slate-300 leading-relaxed">Formulated with precision, manufactured with care, delivered with trust.</p>
+        </div>
+
+        <!-- CTA Button -->
+        <div class="pt-2">
+          <button
+            class="bg-saar-teal text-lg sm:text-lg text-white px-3 sm:px-4 py-2 sm:py-3 rounded-lg font-medium  flex items-center gap-2 shadow-lg">
+            Explore Our Range
+            <svg width="18" height="18" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M8.2418 2.93117C7.41434 3.75866 5.87489 3.72759 5.01257 2.86527L4.65902 2.51172L3.9802 3.19054L4.33375 3.54409C4.96096 4.17129 5.81333 4.49555 6.65978 4.51317L2.4718 8.70116L3.17891 9.40826L7.36688 5.22028C7.38452 6.06674 7.70876 6.9191 8.336 7.54634L8.68952 7.89986L9.36836 7.22102L9.01478 6.8675C8.15246 6.00518 8.12144 4.46577 8.9489 3.63828L9.28832 3.29887L8.58122 2.59176L8.2418 2.93117Z"
+                fill="white" />
+            </svg>
+          </button>
+        </div>
+
+      </main>
+
+      <!-- Carousel Indicators -->
+      <div class="flex items-center justify-start sm:justify-center mt-5 gap-2 pt-4 " >
+        <div class="w-3 h-3 bg-slate-500 rounded-full"></div>
+        <div class="w-12 h-3 bg-white rounded-full"></div>
+        <div class="w-3 h-3 bg-slate-500 rounded-full"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Section -->
+  <section class="py-16 text-center">
+    <!-- Badge -->
+    <div class="inline-flex items-center gap-2 bg-white border border-gray-200 shadow-sm rounded-full px-5 py-2 mb-6">
+      <span class="w-2 h-2 bg-green-500 rounded-full"></span>
+      <span class="text-sm font-medium text-gray-700">Our Products</span>
+    </div>
+
+    <!-- Heading -->
+    <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-4">
+      Comprehensive Product Range
+    </h2>
+
+    <!-- Subheading -->
+    <p class="max-w-3xl mx-auto text-gray-600 text-lg mb-10">
+      Discover limitless solutions with Saar Biotech's dynamic product lineup.
+      From antibiotics to antacids, each product reflects our steadfast dedication 
+      to excellence and innovation.
+    </p>
+
+    <!-- Filters -->
+    <div class="flex flex-col md:flex-row justify-center gap-4 max-w-5xl mx-auto px-4">
+      <!-- Search by composition -->
+      <div class="relative w-full md:w-1/3">
+        <input
+          type="text"
+          placeholder="Search by composition"
+          class="w-full border border-gray-300 rounded-full py-3 px-5 text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+        />
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+          stroke-width="1.5" stroke="currentColor"
+          class="w-5 h-5 text-gray-500 absolute right-4 top-3.5">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1116.65 16.65z" />
+        </svg>
+      </div>
+
+      <!-- Select Category -->
+      <div class="relative w-full md:w-1/3">
+        <select
+          class="w-full border border-gray-300 rounded-full py-3 px-5 text-gray-700 appearance-none focus:outline-none focus:ring-2 focus:ring-blue-500"
+        >
+          <option>Select Category</option>
+          <option>Antibiotics</option>
+          <option>Antacids</option>
+          <option>Supplements</option>
+        </select>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+          stroke-width="1.5" stroke="currentColor"
+          class="w-5 h-5 text-gray-500 absolute right-4 top-3.5 pointer-events-none">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M19 9l-7 7-7-7" />
+        </svg>
+      </div>
+
+      <!-- Select Sub-Category -->
+      <div class="relative w-full md:w-1/3">
+        <select
+          class="w-full border border-gray-300 rounded-full py-3 px-5 text-gray-700 appearance-none focus:outline-none focus:ring-2 focus:ring-blue-500"
+        >
+          <option>Select Sub-Category</option>
+          <option>Capsules</option>
+          <option>Syrups</option>
+          <option>Injections</option>
+        </select>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+          stroke-width="1.5" stroke="currentColor"
+          class="w-5 h-5 text-gray-500 absolute right-4 top-3.5 pointer-events-none">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M19 9l-7 7-7-7" />
+        </svg>
+      </div>
+    </div>
+  </section>
+  
+   <section class="py-16 px-6">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-6">
+
+      <!-- Card 1 -->
+      <div class="bg-[#2bb5a3] text-white rounded-2xl p-8 flex flex-col items-center text-center shadow-sm">
+        <div class="w-14 h-14 bg-white rounded-full flex items-center justify-center mb-4">
+          <!-- Icon -->
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2bb5a3" class="w-7 h-7">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M9 3v2.25m6-2.25V5.25M4.5 9h15m-15 6h15m-9 6v-2.25m6 2.25V18.75" />
+          </svg>
+        </div>
+        <h3 class="text-lg font-semibold mb-1">Suspensions</h3>
+        <p class="text-sm opacity-90">Precise liquid medications</p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="bg-white text-slate-800 rounded-2xl p-8 flex flex-col items-center text-center shadow-sm">
+        <div class="w-14 h-14 bg-[#2bb5a3] rounded-full flex items-center justify-center mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-7 h-7">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+          </svg>
+        </div>
+        <h3 class="text-lg font-semibold mb-1">Syrups</h3>
+        <p class="text-sm text-gray-500">Fast-relief formulations</p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="bg-white text-slate-800 rounded-2xl p-8 flex flex-col items-center text-center shadow-sm">
+        <div class="w-14 h-14 bg-[#2bb5a3] rounded-full flex items-center justify-center mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-7 h-7">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12l15-9v18l-15-9z" />
+          </svg>
+        </div>
+        <h3 class="text-lg font-semibold mb-1">Ointments</h3>
+        <p class="text-sm text-gray-500">Healing topical solutions</p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="bg-white text-slate-800 rounded-2xl p-8 flex flex-col items-center text-center shadow-sm">
+        <div class="w-14 h-14 bg-[#2bb5a3] rounded-full flex items-center justify-center mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-7 h-7">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3 12h18M3 6h18M3 18h18" />
+          </svg>
+        </div>
+        <h3 class="text-lg font-semibold mb-1">Topical Solutions</h3>
+        <p class="text-sm text-gray-500">Targeted applications</p>
+      </div>
+
+      <!-- Card 5 -->
+      <div class="bg-white text-slate-800 rounded-2xl p-8 flex flex-col items-center text-center shadow-sm">
+        <div class="w-14 h-14 bg-[#2bb5a3] rounded-full flex items-center justify-center mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-7 h-7">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M10 14l2-2m0 0l2-2m-2 2l2 2m-2-2l-2 2" />
+          </svg>
+        </div>
+        <h3 class="text-lg font-semibold mb-1">Oral Liquids</h3>
+        <p class="text-sm text-gray-500">Optimal bioavailability</p>
+      </div>
+
+      <!-- Card 6 -->
+      <div class="bg-white text-slate-800 rounded-2xl p-8 flex flex-col items-center text-center shadow-sm">
+        <div class="w-14 h-14 bg-[#2bb5a3] rounded-full flex items-center justify-center mb-4">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-7 h-7">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m6.75-12h.008v.008h-.008V7.5z" />
+          </svg>
+        </div>
+        <h3 class="text-lg font-semibold mb-1">Sprays</h3>
+        <p class="text-sm text-gray-500">Immediate relief solutions</p>
+      </div>
+    </div>
+  </section>
+  
+  
+    <section class="py-8 px-6">
+    <div class="max-w-6xl mx-auto flex flex-wrap items-center justify-between gap-4">
+      
+      <!-- Category Pills -->
+      <div class="flex flex-wrap items-center gap-3">
+        <!-- Active -->
+        <button class="px-5 py-2 rounded-full bg-[#2bb5a3] text-white text-sm font-medium">
+          Antibiotic
+        </button>
+
+        <!-- Inactive Pills -->
+        <button class="px-5 py-2 rounded-full border border-slate-700 text-slate-300 text-sm font-medium hover:bg-slate-800 transition">
+          Antacid
+        </button>
+
+        <button class="px-5 py-2 rounded-full border border-slate-700 text-slate-300 text-sm font-medium hover:bg-slate-800 transition">
+          Anticold
+        </button>
+
+        <button class="px-5 py-2 rounded-full border border-slate-700 text-slate-300 text-sm font-medium hover:bg-slate-800 transition whitespace-nowrap">
+          Analgesic & Anti-Inflammatory
+        </button>
+
+        <button class="px-5 py-2 rounded-full border border-slate-700 text-slate-300 text-sm font-medium hover:bg-slate-800 transition whitespace-nowrap">
+          Hepatoprotective Agent
+        </button>
+      </div>
+
+      <!-- Show All Products -->
+      <a href="#" class="text-[#2bb5a3] text-sm font-semibold flex items-center gap-1 hover:underline whitespace-nowrap">
+        Show All Products
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" 
+          stroke-width="2" stroke="currentColor" class="w-4 h-4">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+        </svg>
+      </a>
+    </div>
+  </section>
+  
+  
+    <!-- Product Grid Section -->
+   <section class="py-16 px-6">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+      <!-- Product Card -->
+      <div class="bg-white border border-[#e5e7eb] rounded-2xl p-4 flex flex-col items-center text-center shadow-sm hover:shadow-md transition">
+        <img src="/images/product_image_1.png" alt="Product" class="h-28 object-contain mb-3">
+
+        <!-- Product Title -->
+        <h3 class="text-[15px] font-semibold text-[#0f172a] mb-2">
+          Levocetirizine Dihydrochloride
+        </h3>
+
+        <!-- Blue Capsule Label + Dosage -->
+        <div class="flex items-center justify-center gap-2 mb-4">
+          <span class="bg-[#4b6fff] text-[#0f1b66] text-[13px] font-medium px-4 py-[4px] rounded-full">
+            Syrup
+          </span>
+          <span class="text-gray-700 text-[14px] font-medium">200mg</span>
+        </div>
+
+        <!-- Buttons -->
+        <div class="flex flex-row gap-3 w-full justify-center">
+          <button class="flex-1 bg-[#2bb5a3] text-white text-[13px] py-2 rounded-lg font-medium hover:bg-[#24a091] transition">
+            View Details
+          </button>
+          <button class="flex-1 border border-[#cbd5e1] text-[#1e293b] text-[13px] py-2 rounded-lg font-medium hover:bg-[#f1f5f9] transition">
+            Send Enquiry
+          </button>
+        </div>
+      </div>
+
+      <!-- Repeat Product Cards -->
+      <div class="bg-white border border-[#e5e7eb] rounded-2xl p-4 flex flex-col items-center text-center shadow-sm hover:shadow-md transition">
+        <img src="/images/product_image_1.png" alt="Product" class="h-28 object-contain mb-3">
+        <h3 class="text-[15px] font-semibold text-[#0f172a] mb-2">
+          Sodium Alginate Oral
+        </h3>
+        <div class="flex items-center justify-center gap-2 mb-4">
+          <span class="bg-[#4b6fff] text-[#0f1b66] text-[13px] font-medium px-4 py-[4px] rounded-full">
+            Suspension
+          </span>
+          <span class="text-gray-700 text-[14px] font-medium">200mg</span>
+        </div>
+        <div class="flex flex-row gap-3 w-full justify-center">
+          <button class="flex-1 bg-[#2bb5a3] text-white text-[13px] py-2 rounded-lg font-medium hover:bg-[#24a091] transition">
+            View Details
+          </button>
+          <button class="flex-1 border border-[#cbd5e1] text-[#1e293b] text-[13px] py-2 rounded-lg font-medium hover:bg-[#f1f5f9] transition">
+            Send Enquiry
+          </button>
+        </div>
+      </div>
+
+      <div class="bg-white border border-[#e5e7eb] rounded-2xl p-4 flex flex-col items-center text-center shadow-sm hover:shadow-md transition">
+        <img src="/images/product_image_1.png" alt="Product" class="h-28 object-contain mb-3">
+        <h3 class="text-[15px] font-semibold text-[#0f172a] mb-2">
+          Cholecalciferol Vitamin D3 Drops
+        </h3>
+        <div class="flex items-center justify-center gap-2 mb-4">
+          <span class="bg-[#4b6fff] text-[#0f1b66] text-[13px] font-medium px-4 py-[4px] rounded-full">
+            Drops
+          </span>
+          <span class="text-gray-700 text-[14px] font-medium">50mg</span>
+        </div>
+        <div class="flex flex-row gap-3 w-full justify-center">
+          <button class="flex-1 bg-[#2bb5a3] text-white text-[13px] py-2 rounded-lg font-medium hover:bg-[#24a091] transition">
+            View Details
+          </button>
+          <button class="flex-1 border border-[#cbd5e1] text-[#1e293b] text-[13px] py-2 rounded-lg font-medium hover:bg-[#f1f5f9] transition">
+            Send Enquiry
+          </button>
+        </div>
+      </div>
+
+      <div class="bg-white border border-[#e5e7eb] rounded-2xl p-4 flex flex-col items-center text-center shadow-sm hover:shadow-md transition">
+        <img src="/images/product_image_1.png" alt="Product" class="h-28 object-contain mb-3">
+        <h3 class="text-[15px] font-semibold text-[#0f172a] mb-2">
+          Levodropropizine & Chlorpheniramine
+        </h3>
+        <div class="flex items-center justify-center gap-2 mb-4">
+          <span class="bg-[#4b6fff] text-[#0f1b66] text-[13px] font-medium px-4 py-[4px] rounded-full">
+            Syrup
+          </span>
+          <span class="text-gray-700 text-[14px] font-medium">200mg</span>
+        </div>
+        <div class="flex flex-row gap-3 w-full justify-center">
+          <button class="flex-1 bg-[#2bb5a3] text-white text-[13px] py-2 rounded-lg font-medium hover:bg-[#24a091] transition">
+            View Details
+          </button>
+          <button class="flex-1 border border-[#cbd5e1] text-[#1e293b] text-[13px] py-2 rounded-lg font-medium hover:bg-[#f1f5f9] transition">
+            Send Enquiry
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+{{ end }}

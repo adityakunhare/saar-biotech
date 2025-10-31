@@ -1,11 +1,46 @@
 <!DOCTYPE html>
-<html>
-    {{- partial "head.html" . -}}
-    <body>
-        {{- partial "header.html" . -}}
-        <div id="content">
-        {{- block "main" . }}{{- end }}
-        </div>
-        {{- partial "footer.html" . -}}
-    </body>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAAR - Mobile Hero</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .no-scrollbar::-webkit-scrollbar {
+          display: none;
+      }
+      .no-scrollbar {
+          -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;  /* Firefox */
+    }
+
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'saar-teal': '#3CB6A1',
+                        'saar-dark': '#3CB6A1',
+                        'saar-slate': '#64748B',
+                        'saar-blue':'#172C45'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-[#f8f8f8] text-white font-sans">
+    {{- partial "header.html" . -}}
+
+    {{- block "main" . }}{{- end }}
+
+
+    {{- partial "footer.html" . -}}
+</body>
+
 </html>
+
+
